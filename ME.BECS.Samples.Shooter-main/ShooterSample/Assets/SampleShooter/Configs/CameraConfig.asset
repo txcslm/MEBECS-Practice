@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c23d484dd87431ab96b0d060a518f1, type: 3}
+  m_Name: CameraConfig
+  m_EditorClassIdentifier: 
+  baseConfig: {fileID: 0}
+  data:
+    components:
+    - rid: 2710897183939624968
+    - rid: 2710897183939624969
+    - rid: 2710897183939624970
+    - rid: 2710897183939624971
+    - rid: 2710897183939624972
+    - rid: 935440366453653887
+    - rid: 935440366453653888
+    - rid: 935440366453653889
+    - rid: 935440389415109458
+  sharedData:
+    components: []
+  staticData:
+    components:
+    - rid: 2710897183939624973
+  dataInitialize:
+    components:
+    - rid: 2710897183939624973
+  aspects:
+    components:
+    - rid: 935440366453653886
+  collectionsData:
+    nextId: 0
+    items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 935440366453653886
+      type: {class: TransformAspect, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data: 
+    - rid: 935440366453653887
+      type: {class: LocalPositionComponent, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data:
+        value:
+          x: 0
+          y: 0
+          z: 0
+    - rid: 935440366453653888
+      type: {class: LocalRotationComponent, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data:
+        value:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+    - rid: 935440366453653889
+      type: {class: LocalScaleComponent, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data:
+        value:
+          x: 1
+          y: 1
+          z: 1
+    - rid: 935440389415109458
+      type: {class: CameraFollowSpeedComponent, ns: SampleShooter.Components.Camera,
+        asm: SampleShooter}
+      data:
+        FollowSpeed: 5
+    - rid: 2710897183939624968
+      type: {class: CameraComponent, ns: SampleShooter.Components.Camera, asm: SampleShooter}
+      data: 
+    - rid: 2710897183939624969
+      type: {class: CameraPositionOffsetComponent, ns: SampleShooter.Components.Camera,
+        asm: SampleShooter}
+      data:
+        PositionOffset:
+          x: 0
+          y: 20
+          z: -20
+    - rid: 2710897183939624970
+      type: {class: CameraRotationOffsetComponent, ns: SampleShooter.Components.Camera,
+        asm: SampleShooter}
+      data:
+        RotationOffset:
+          x: 40
+          y: 0
+          z: 0
+    - rid: 2710897183939624971
+      type: {class: CameraSmoothTimeComponent, ns: SampleShooter.Components.Camera,
+        asm: SampleShooter}
+      data:
+        SmoothTime: 0.1
+    - rid: 2710897183939624972
+      type: {class: CameraTypeComponent, ns: SampleShooter.Components.Camera, asm: SampleShooter}
+      data:
+        CameraType: 0
+    - rid: 2710897183939624973
+      type: {class: InstantiateViewComponent, ns: ME.BECS.Views, asm: ME.BECS.Views}
+      data:
+        view:
+          viewSource:
+            providerId: 1
+            prefabId: 193

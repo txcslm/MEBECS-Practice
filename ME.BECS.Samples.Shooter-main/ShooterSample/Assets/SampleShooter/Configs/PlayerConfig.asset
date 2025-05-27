@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c23d484dd87431ab96b0d060a518f1, type: 3}
+  m_Name: PlayerConfig
+  m_EditorClassIdentifier: 
+  baseConfig: {fileID: 0}
+  data:
+    components:
+    - rid: 935440366453653892
+    - rid: 935440367154626651
+    - rid: 935440367154626652
+    - rid: 935440367154626653
+    - rid: 935440522641932289
+    - rid: 935440523014176769
+  sharedData:
+    components: []
+  staticData:
+    components:
+    - rid: 2710897054365253635
+  dataInitialize:
+    components:
+    - rid: 2710897054365253635
+  aspects:
+    components:
+    - rid: 935440367154626650
+  collectionsData:
+    nextId: 0
+    items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 935440366453653892
+      type: {class: PlayerMoveSpeedComponent, ns: SampleShooter.Components.Player,
+        asm: SampleShooter}
+      data:
+        MoveSpeed: 10
+    - rid: 935440367154626650
+      type: {class: TransformAspect, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data: 
+    - rid: 935440367154626651
+      type: {class: LocalPositionComponent, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data:
+        value:
+          x: 0
+          y: 0
+          z: 0
+    - rid: 935440367154626652
+      type: {class: LocalRotationComponent, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data:
+        value:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+    - rid: 935440367154626653
+      type: {class: LocalScaleComponent, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data:
+        value:
+          x: 1
+          y: 1
+          z: 1
+    - rid: 935440522641932289
+      type: {class: PlayerMuzzlePositionComponent, ns: SampleShooter.Components.Player,
+        asm: SampleShooter}
+      data:
+        MuzzlePointOffset:
+          x: 0
+          y: 1
+          z: 1
+    - rid: 935440523014176769
+      type: {class: PlayerShootingRangeComponent, ns: SampleShooter.Components.Player,
+        asm: SampleShooter}
+      data:
+        ShootingRange: 15
+    - rid: 2710897054365253635
+      type: {class: InstantiateViewComponent, ns: ME.BECS.Views, asm: ME.BECS.Views}
+      data:
+        view:
+          viewSource:
+            providerId: 1
+            prefabId: 221

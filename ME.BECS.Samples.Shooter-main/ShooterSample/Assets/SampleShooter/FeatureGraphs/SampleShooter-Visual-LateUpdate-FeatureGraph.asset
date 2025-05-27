@@ -1,0 +1,216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c47971b42c2144aeb6f0fb81f786410, type: 3}
+  m_Name: SampleShooter-Visual-LateUpdate-FeatureGraph
+  m_EditorClassIdentifier: 
+  id: 1007
+  builtInGraph: 0
+  isInnerGraph: 0
+  serializedNodes: []
+  nodes:
+  - rid: 935440388892917760
+  - rid: 935440388892917761
+  - rid: 935440388892917762
+  - rid: 935440388892917764
+  - rid: 935440388892917766
+  - rid: 935440391132676314
+  edges:
+  - GUID: 54335f3c-0654-44bd-9bcb-70afa564461f
+    owner: {fileID: 11400000}
+    inputNodeGUID: EndNode
+    outputNodeGUID: 00a7e009-3ed7-4153-bf1c-1e1b13a169da
+    inputFieldName: inputNodes
+    outputFieldName: outputNodes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 409d76d0-49b8-42f2-bc4f-80796c12c8b8
+    owner: {fileID: 11400000}
+    inputNodeGUID: 0a463caf-211f-4603-8a12-e6d6cef889f4
+    outputNodeGUID: StartNode
+    inputFieldName: inputNodes
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 8bafbbb7-e1ae-40bb-8d56-45763430a5e4
+    owner: {fileID: 11400000}
+    inputNodeGUID: 61743b5a-8cf6-4152-9a6d-27c98823fa67
+    outputNodeGUID: 0a463caf-211f-4603-8a12-e6d6cef889f4
+    inputFieldName: inputNodes
+    outputFieldName: outputNodes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: e3555a7d-8242-4fe5-a08c-59d67085b7b2
+    owner: {fileID: 11400000}
+    inputNodeGUID: 76744ea3-784f-494d-883c-6f0d8f789259
+    outputNodeGUID: 61743b5a-8cf6-4152-9a6d-27c98823fa67
+    inputFieldName: inputNodes
+    outputFieldName: outputNodes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 7e665495-0cd2-4833-b2f0-3eaa008ca7ec
+    owner: {fileID: 11400000}
+    inputNodeGUID: 00a7e009-3ed7-4153-bf1c-1e1b13a169da
+    outputNodeGUID: 76744ea3-784f-494d-883c-6f0d8f789259
+    inputFieldName: inputNodes
+    outputFieldName: outputNodes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements: []
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 935440388892917760
+      type: {class: StartNode, ns: ME.BECS.FeaturesGraph.Nodes, asm: ME.BECS.Features}
+      data:
+        syncPoint: 0
+        syncCount: 1
+        nodeCustomName: 
+        GUID: StartNode
+        groupGUID: 
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: -742.15247
+          y: -2.0000763
+          width: 100
+          height: 80
+        expanded: 1
+        enabled: 1
+        debug: 0
+        nodeLock: 0
+        customRuntimeSystemRoot: {fileID: 0}
+        isInstance: 0
+    - rid: 935440388892917761
+      type: {class: ExitNode, ns: ME.BECS.FeaturesGraph.Nodes, asm: ME.BECS.Features}
+      data:
+        syncPoint: 1
+        syncCount: 0
+        nodeCustomName: 
+        GUID: EndNode
+        groupGUID: 
+        computeOrder: 5
+        position:
+          serializedVersion: 2
+          x: 1074.415
+          y: 24.000011
+          width: 100
+          height: 80
+        expanded: 1
+        enabled: 1
+        debug: 0
+        nodeLock: 0
+        customRuntimeSystemRoot: {fileID: 0}
+        isInstance: 0
+    - rid: 935440388892917762
+      type: {class: SystemNode, ns: ME.BECS.FeaturesGraph.Nodes, asm: ME.BECS.Features}
+      data:
+        syncPoint: 1
+        syncCount: 0
+        nodeCustomName: 
+        GUID: 61743b5a-8cf6-4152-9a6d-27c98823fa67
+        groupGUID: 
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: -180.02385
+          y: -22.00003
+          width: 300
+          height: 104
+        expanded: 1
+        enabled: 1
+        debug: 0
+        nodeLock: 0
+        customRuntimeSystemRoot: {fileID: 0}
+        system:
+          rid: 935440388892917763
+    - rid: 935440388892917763
+      type: {class: CameraMoveSystem, ns: SampleShooter.Systems.Camera, asm: SampleShooter}
+      data: 
+    - rid: 935440388892917764
+      type: {class: GraphNode, ns: ME.BECS.FeaturesGraph.Nodes, asm: ME.BECS.Features}
+      data:
+        syncPoint: 1
+        syncCount: 0
+        nodeCustomName: 
+        GUID: 00a7e009-3ed7-4153-bf1c-1e1b13a169da
+        groupGUID: 
+        computeOrder: 4
+        position:
+          serializedVersion: 2
+          x: 591.9899
+          y: -22.000029
+          width: 300
+          height: 108
+        expanded: 1
+        enabled: 1
+        debug: 0
+        nodeLock: 0
+        customRuntimeSystemRoot: {fileID: 0}
+        graphValue: {fileID: 11400000, guid: c2aa5f0bbcb444e4e8fd45055d600fbd, type: 2}
+    - rid: 935440388892917766
+      type: {class: SystemNode, ns: ME.BECS.FeaturesGraph.Nodes, asm: ME.BECS.Features}
+      data:
+        syncPoint: 1
+        syncCount: 0
+        nodeCustomName: 
+        GUID: 0a463caf-211f-4603-8a12-e6d6cef889f4
+        groupGUID: 
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: -551.4124
+          y: -22.000145
+          width: 300
+          height: 140
+        expanded: 1
+        enabled: 1
+        debug: 0
+        nodeLock: 0
+        customRuntimeSystemRoot: {fileID: 0}
+        system:
+          rid: 935440388892917767
+    - rid: 935440388892917767
+      type: {class: CameraInitializeSystem, ns: SampleShooter.Systems.Camera, asm: SampleShooter}
+      data:
+        CameraConfig:
+          sourceId: 212
+    - rid: 935440391132676314
+      type: {class: SystemNode, ns: ME.BECS.FeaturesGraph.Nodes, asm: ME.BECS.Features}
+      data:
+        syncPoint: 1
+        syncCount: 0
+        nodeCustomName: 
+        GUID: 76744ea3-784f-494d-883c-6f0d8f789259
+        groupGUID: 
+        computeOrder: 3
+        position:
+          serializedVersion: 2
+          x: 196.78926
+          y: -22.000122
+          width: 300
+          height: 104
+        expanded: 1
+        enabled: 1
+        debug: 0
+        nodeLock: 0
+        customRuntimeSystemRoot: {fileID: 0}
+        system:
+          rid: 935440391132676315
+    - rid: 935440391132676315
+      type: {class: CameraRayCastSystem, ns: SampleShooter.Systems.Camera, asm: SampleShooter}
+      data: 
